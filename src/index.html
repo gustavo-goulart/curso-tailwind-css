@@ -7,39 +7,92 @@
     <title>Tailwind CSS</title>
   </head>
   <body>
-    <div>
+    <div class="h-lvh w-screen grid grid-cols-2 grid-rows-6">
       <!-- imagem principal -->
-      <div>
-        <img src="./images/insta-img.png" alt="celular instagram" />
+      <div class="row-span-5 flex justify-end">
+        <img
+          class="w-max-96"
+          src="./images/insta-img.png"
+          alt="celular instagram"
+        />
       </div>
 
       <!-- Formulário -->
-      <div>
-        <form>
-          <img src="./images/insta-logo.png" alt="insta-logo" />
+      <div
+        class="row-span-5 flex justify-center items-center flex-col grid-cols-1"
+      >
+        <form
+          class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-2 gap-3"
+        >
+          <img class="w-52" src="./images/insta-logo.png" alt="insta-logo" />
 
-          <input type="text" placeholder="Número de telefone, e-mail" />
-          <input type="password" placeholder="senha" />
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border rounded-sm"
+            type="text"
+            placeholder="Telefone, e-mail"
+          />
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border rounded-sm"
+            type="password"
+            placeholder="senha"
+          />
 
-          <button>Entrar</button>
+          <button
+            class="bg-blue-400 w-full rounded-md h-8 text-slate-50 hover:bg-blue-300"
+          >
+            Entrar
+          </button>
 
-          <a href="#">Logar com Facebook</a>
-          <a href="#">Esqueci minha senha</a>
+          <a class="text-blue-800 font-bold cursor-pointer" href="#">
+            Logar com Facebook</a
+          >
+          <a class="text-blue-800 text-sm cursor-pointer" href="#"
+            >Esqueci minha senha</a
+          >
         </form>
 
-        <div>
-          <p>Não tem conta? Cadastrar-se</p>
+        <div class="border w-80 my-4 text-center py-4">
+          <p>
+            Não tem conta?
+            <a class="text-blue-400 font-bold" href="#">Cadastrar-se</a>
+          </p>
         </div>
 
         <p>Baixe o Aplicativo</p>
 
-        <div>
-          <img src="./images/apple.png" alt="app-store" />
-          <img src="./images/google.png" alt="google-play" />
+        <div class="flex gap-2 mt-4">
+          <img class="h-10" src="./images/apple.png" alt="app-store" />
+          <img class="h-10" src="./images/google.png" alt="google-play" />
         </div>
       </div>
 
       <!-- Rodapé -->
+
+      <div class="row-span-1 col-span-2">
+        <ul class="flex flex-wrap gap-5 justify-center">
+          <li class="text-slate-800 text-sm">Meta</li>
+          <li class="text-slate-800 text-sm">Sobre</li>
+          <li class="text-slate-800 text-sm">Blog</li>
+          <li class="text-slate-800 text-sm">Carreiras</li>
+          <li class="text-slate-800 text-sm">Ajuda</li>
+          <li class="text-slate-800 text-sm">API</li>
+          <li class="text-slate-800 text-sm">Privacidade</li>
+          <li class="text-slate-800 text-sm">Termos</li>
+          <li class="text-slate-800 text-sm">Localizações</li>
+          <li class="text-slate-800 text-sm">Instagram Lite</li>
+          <li class="text-slate-800 text-sm">Threads</li>
+          <li class="text-slate-800 text-sm">
+            Carregamento de contatos e não usuários
+          </li>
+          <li class="text-slate-800 text-sm">Meta Verified</li>
+        </ul>
+
+        <ul class="flex flex-wrap gap-2 justify-center mt-6">
+          <li class="text-slate-800">Português (Brasil)</li>
+
+          <li class="text-slate-800">© 2024 Instagram from Meta</li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
